@@ -7,6 +7,6 @@ const app = new Vue({
   data: {
     slides,
     //assegno manualmente una proprietà all'indice dell'array
-    activeSlideIndex: 2,
+    activeSlideIndex: 0,
   },
 });
