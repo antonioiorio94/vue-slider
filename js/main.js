@@ -22,5 +22,11 @@ const app = new Vue({
         this.activeSlideIndex++;
       }
     },
+    checkActive(item) {
+      const index = this.slides.findIndex(
+        (slide) => slide.title === item.title
+      );
+      return index === this.activeSlideIndex ? "thumb active" : "thumb";
+    },
   },
 });
