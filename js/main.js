@@ -28,12 +28,14 @@ const app = new Vue({
       );
       return index === this.activeSlideIndex ? "thumb active" : "thumb";
     },
-     //1- al click su una thumb, visualizzare in grande l'immagine corrispondente
+    //1- al click su una thumb, visualizzare in grande l'immagine corrispondente
 
-    showClickedThumb(){
-      const clickedIndex = this.slides.findIndex((slide) => slide.) 
-    }
+    showOnClick(item) {
+      const indexImgClicked = this.slides.findIndex(
+        (slide) => slide.title === item.title
+      );
+      console.log(indexImgClicked);
+      this.activeSlideIndex = indexImgClicked;
+    },
   },
- 
-
 });
