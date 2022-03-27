@@ -9,9 +9,9 @@ const app = new Vue({
     //assegno manualmente una proprietà all'indice dell'array
     activeSlideIndex: 0,
   },
-  //1- al click su una thumb, visualizzare in grande l'immagine corrispondente
-  //aggiunta di una funzione che si attiva al click del div"prev/next" e aumente il numero dell'indice di 1
+
   methods: {
+    //aggiunta di una funzione che si attiva al click del div"prev/next" e aumente il numero dell'indice di 1
     showPrevThumb() {
       if (this.activeSlideIndex > 0) {
         this.activeSlideIndex--;
@@ -28,5 +28,12 @@ const app = new Vue({
       );
       return index === this.activeSlideIndex ? "thumb active" : "thumb";
     },
+     //1- al click su una thumb, visualizzare in grande l'immagine corrispondente
+
+    showClickedThumb(){
+      const clickedIndex = this.slides.findIndex((slide) => slide.) 
+    }
   },
+ 
+
 });
